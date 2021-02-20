@@ -22,5 +22,6 @@ describe('ForecastSummary', () => {
         temperature={validProps.temperature}
       />
     );
+    expect(asFragment()).toMatchSnapshot();
   });
 });
