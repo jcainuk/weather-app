@@ -13,5 +13,14 @@ describe('ForecastSummary', () => {
     },
   };
 
-  it('renders correctly', () => {});
+  it('renders correctly', () => {
+    const { asFragment } = render(
+      <ForecastSummary
+        date={validProps.date}
+        description={validProps.description}
+        icon={validProps.icon}
+        temperature={validProps.temperature}
+      />
+    );
+  });
 });
