@@ -19,7 +19,7 @@ const ForecastSummaries = ({ forecasts }) => (
 ForecastSummaries.propTypes = {
   forecasts: PropTypes.arrayOf(
     PropTypes.shape({
-      data: PropTypes.number,
+      date: PropTypes.number,
       description: PropTypes.string,
       icon: PropTypes.number,
       temperature: PropTypes.shape({
