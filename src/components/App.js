@@ -14,6 +14,17 @@ const App = (props) => {
 };
 
 App.propTypes = {
+  forecasts: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.number,
+      description: PropTypes.string,
+      icon: PropTypes.number,
+      temperature: PropTypes.shape({
+        max: PropTypes.number,
+        min: PropTypes.number,
+      }),
+    })
+  ).isRequired,
   location: PropTypes.shape({
     city: PropTypes.string,
     country: PropTypes.string,
