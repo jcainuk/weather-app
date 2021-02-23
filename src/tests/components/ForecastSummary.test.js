@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import moment from 'moment';
 import ForecastSummary from '../../components/ForecastSummary';
 
 describe('ForecastSummary', () => {
@@ -39,7 +40,7 @@ describe('ForecastSummary', () => {
       />
     );
 
-    expect(getByText('11111111')).toHaveClass('forecast-summary__date');
+    expect(getByText('Thu 1st Jan')).toHaveClass('forecast-summary__date');
     expect(getByText('Stub description')).toHaveClass(
       'forecast-summary__description'
     );
