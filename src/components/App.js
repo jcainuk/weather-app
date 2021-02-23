@@ -1,10 +1,16 @@
-import '../styles/App.css';
+import React from 'react';
 import PropTypes from 'prop-types';
 import LocationDetails from './LocationDetails';
+import ForecastSummaries from './ForecastSummaries';
 
-const App = ({ location }) => {
-  const { city, country } = location;
-  return <LocationDetails city={city} country={country} />;
+const App = (props) => {
+  const { location } = props;
+  return (
+    <div className="App">
+      <LocationDetails city={location.city} country={location.country} />
+      <ForecastSummaries />
+    </div>
+  );
 };
 
 App.propTypes = {
