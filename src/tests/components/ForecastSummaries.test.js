@@ -51,6 +51,8 @@ describe('ForecastSummaries', () => {
         onForecastSelect={validProps.onSelect}
       />
     );
-    expect(getAllByTestId('forecast-summary')).toHaveLength(3);
+    expect(getAllByTestId('forecast-summary')).toHaveLength(
+      validProps.forecasts.length
+    );
   });
 });
