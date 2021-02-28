@@ -3,6 +3,7 @@ import LocationDetails from './LocationDetails';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
 import '../styles/App.css';
+import axios from ('axios');
 
 const App = ({ forecasts, location }) => {
   const [forecasts, setForecasts] = useState([0]);
