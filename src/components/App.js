@@ -23,7 +23,7 @@ const App = ({ forecasts, location }) => {
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
       />
-      <ForecastDetails forecast={selectedForecast} />
+      {selectedForecast && (<ForecastDetails forecast={selectedForecast} />)}
     </div>
   );
 };
