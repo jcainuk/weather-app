@@ -19,7 +19,7 @@ const ForecastSummary = (props) => {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
-      <button type="button" onClick={() => console.log('Hello!')}>
+      <button type="button" onClick={() => onSelect(date)}>
         More details
       </button>
     </div>
