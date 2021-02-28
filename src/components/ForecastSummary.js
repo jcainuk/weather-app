@@ -18,6 +18,7 @@ const ForecastSummary = (props) => {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
+      <button type="button">More details</button>
     </div>
   );
 };
