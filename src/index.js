@@ -5,7 +5,7 @@ import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App forecasts={forecasts} location={location} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
