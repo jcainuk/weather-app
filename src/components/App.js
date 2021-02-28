@@ -5,7 +5,7 @@ import ForecastDetails from './ForecastDetails';
 import '../styles/App.css';
 
 const App = ({ forecasts, location }) => {
-  const [forecasts, setForecasts] = useState([]);
+  const [forecasts, setForecasts] = useState([0]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
   const selectedForecast = forecasts.find(
