@@ -8,7 +8,7 @@ import ForecastDetails from './ForecastDetails';
 const App = () => {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: '', country: '' });
-  const [selectedDate, setSelectedDate] = useState(0);
+  const [selectedDate, setSelectedDate] = useState([]);
 
   const getForecast = () => {
     const endpoint = 'https://mcr-codes-weather-app.herokuapp.com/forecast';

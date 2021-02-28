@@ -13,7 +13,7 @@ const ForecastDetails = ({ forecast }) => {
       </div>
       <div className="forecast-details__body">
         <div className="forecast-details__icon">
-          <WeatherIcon name="owm" iconId={icon} />
+          <WeatherIcon name="owm" iconId={icon.toString()} />
         </div>
         <div className="forecast-details__body__text">
           <div className="forecast-details__description" id="description">
@@ -56,7 +56,7 @@ ForecastDetails.propTypes = {
     description: PropTypes.string.isRequired,
     date: PropTypes.number.isRequired,
     humidity: PropTypes.number.isRequired,
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.number.isRequired,
     temperature: PropTypes.shape({
       max: PropTypes.number,
       min: PropTypes.number,
