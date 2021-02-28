@@ -29,6 +29,7 @@ ForecastSummaries.propTypes = {
       }),
     })
   ).isRequired,
+  onForecastSelect: PropTypes.func.isRequired,
 };
 
 export default ForecastSummaries;

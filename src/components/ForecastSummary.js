@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import WeatherIcon from 'react-icons-weather';
@@ -18,7 +19,9 @@ const ForecastSummary = (props) => {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
-      <button type="button">More details</button>
+      <button type="button" onClick={() => console.log('Hello!')}>
+        More details
+      </button>
     </div>
   );
 };
