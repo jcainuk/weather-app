@@ -19,7 +19,9 @@ const App = () => {
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
-
+  const handleCitySearch = () => {
+    getForecast(setSelectedDate, setForecasts, setLocation);
+  };
   const handleForecastSelect = (date) => {
     setSelectedDate(date);
   };
