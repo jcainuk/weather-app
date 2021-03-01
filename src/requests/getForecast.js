@@ -8,6 +8,7 @@ const getForecast = (
   setSelectedDate,
   setErrorMessage
 ) => {
+  setErrorMessage('');
   let endpoint = 'https://mcr-codes-weather-app.herokuapp.com/forecast';
 
   if (searchText) {
