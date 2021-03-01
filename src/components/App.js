@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
 import LocationDetails from './LocationDetails';
+import SearchForm from './SearchForm';
 import ForecastSummaries from './ForecastSummaries';
 import ForecastDetails from './ForecastDetails';
 import getForecast from '../requests/getForecast';
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
+      <SearchForm />
       <ForecastSummaries
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
