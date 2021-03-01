@@ -3,13 +3,12 @@ import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import SearchForm from '../../components/SearchForm';
 
-const validProps = {
-  searchText: 'Liverpool',
-  setSearchText: jest.fn(),
-  onSubmit: jest.fn(),
-};
-
 describe('It renders correctly', () => {
+  const validProps = {
+    searchText: 'Liverpool',
+    setSearchText: jest.fn(),
+    onSubmit: jest.fn(),
+  };
   it('renders as expected', () => {
     const { asFragment } = render(<SearchForm {...validProps} />);
     expect(asFragment).toMatchSnapshot();
