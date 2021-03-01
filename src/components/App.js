@@ -7,6 +7,7 @@ import ForecastDetails from './ForecastDetails';
 import getForecast from '../requests/getForecast';
 
 const App = () => {
+  const [errorMessage, setErrorMessage] = useState('');
   const [searchText, setSearchText] = useState('');
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: '', country: '' });
@@ -28,7 +29,11 @@ const App = () => {
 
   return (
     <div className="weather-app">
-      <LocationDetails city={location.city} country={location.country} />
+      <LocationDetails
+        city={location.city}
+        country={location.country}
+        errorMessage={errorMessage}
+      />
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}
