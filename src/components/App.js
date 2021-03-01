@@ -13,14 +13,14 @@ const App = () => {
   const [selectedDate, setSelectedDate] = useState([]);
 
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
   }, []);
 
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
   const handleCitySearch = () => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
   };
   const handleForecastSelect = (date) => {
     setSelectedDate(date);
